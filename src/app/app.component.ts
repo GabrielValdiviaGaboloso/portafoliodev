@@ -5,6 +5,7 @@ import { HeroComponent } from './components/hero/hero.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { CarruselComponent } from './components/carrusel/carrusel.component';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,8 @@ import { ContactComponent } from './components/contact/contact.component';
     HeroComponent,
     AboutComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    CarruselComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

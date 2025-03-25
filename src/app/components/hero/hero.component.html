@@ -1,17 +1,45 @@
 <section class="hero" id="home">
   <div class="container">
     <div class="hero-content">
-      <div class="hero-text animate-fade-in">
-        <h1 class="hero-title">¡Hola! Soy <span class="highlight">{{ name }}</span></h1>
-        <p class="hero-subtitle">{{ title }}</p>
-        <div class="hero-buttons">
-          <a href="#projects" class="button button-primary">Ver Proyectos</a>
-          <a href="#contact" class="button button-outline">Contactar</a>
+      <!-- Parte izquierda -->
+      <div class="hero-left">
+        <div class="hero-text animate-fade-in">
+          <h1 class="hero-title">¡Hola! Soy <span class="highlight">{{ name }}</span></h1>
+          <p class="hero-subtitle">{{ title }}</p>
+        </div>
+        <div class="hero-image animate-fade-in">
+          <img [src]="'/assets/perfil.jpg'" alt="Hero Image">
         </div>
       </div>
-      <div class="hero-image animate-fade-in">
-        <img [src]="'/assets/perfil.jpg'" alt="Hero Image">
+      <!-- Parte derecha -->
+      <div class="hero-right">
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-number">5+</div>
+            <div class="stat-label">Años de Experiencia</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Proyectos Completados</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">30+</div>
+            <div class="stat-label">Clientes Satisfechos</div>
+          </div>
+        </div>
+        <div class="skills pl-3">
+          <h3>Mis Habilidades</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Angular</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">React</span>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 </section>
